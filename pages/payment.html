@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - FloraHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="../styles/paymentstyle.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="./shopindex.html" style="color:black; text-decoration: none;"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid grid-2">
+            <!-- Payment Methods -->
+            <div class="card">
+                <h2 class="section-title">Payment Method</h2>
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <input type="radio" name="payment" id="gpay" checked>
+                        <label for="gpay">
+                            <img src="https://images.app.goo.gl/9WrBWUELxXBNZEfe6" class="gpay-logo" alt="GPay">
+                            Google Pay
+                        </label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" id="cod">
+                        <label for="cod">
+                            <i class="fas fa-money-bill-wave"></i>
+                            Cash on Delivery
+                        </label>
+                    </div>
+                </div>
+
+                <!-- GPay Verification -->
+                <div class="payment-form" id="gpayForm">
+                    <div class="form-group">
+                        <label for="upiId">GPay UPI ID</label>
+                        <input type="text" id="upiId" class="form-control" 
+                               placeholder="example@okaxis" 
+                               pattern="[a-zA-Z0-9.-]+@(okaxis|okhdfcbank|oksbi|okicici)">
+                        <span class="validation-icon" id="validationIcon"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="verifyGPay()">
+                        Verify GPay ID
+                    </button>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="card">
+                <h2 class="section-title">Order Summary</h2>
+                <div class="order-items">
+                    <div class="order-item">
+                        <img src="../../assets/images/pic1.jpg" alt="Plant">
+                        <div class="item-details">
+                            <h3>Money Plant</h3>
+                            <p>Quantity: 2</p>
+                        </div>
+                        <div class="item-price">₹498</div>
+                    </div>
+                </div>
+                <div class="order-total">
+                    <div class="subtotal">
+                        <span>Subtotal</span>
+                        <span>₹498</span>
+                    </div>
+                    <div class="shipping">
+                        <span>Shipping</span>
+                        <span>₹50</span>
+                    </div>
+                    <div class="total">
+                        <span>Total</span>
+                        <span>₹548</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="processPayment()">
+                    Pay ₹548
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Success Overlay -->
+    <div class="overlay" id="successOverlay" style="display: none;">
+        <div class="modal fade-in">
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Your order has been placed successfully.</p>
+            <button class="btn btn-primary" onclick="window.location.href='orders.html'">
+                View Orders
+            </button>
+        </div>
+    </div>
+
+    <script src="../scripts/paymentscript.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - FloraHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/profilestyle.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a class="back-link" href="./homeindex.html" style="color:black"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile-header card">
+            <div class="profile-picture">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="profile-info">
+                <h1>John Doe</h1>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Garden Street, Green Park</p>
+                <p><i class="fas fa-envelope"></i> john.doe@example.com</p>
+            </div>
+        </div>
+
+        <div class="grid grid-3">
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-shopping-bag"></i> Shopping</h2>
+                <ul class="profile-links">
+                    
+                    <li>
+                        <a href="./orders.html">
+                            <i class="fas fa-box"></i>
+                            My Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ratings">
+                            <i class="fas fa-star"></i>
+                            My Ratings & Reviews
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-user-cog"></i> Account Settings</h2>
+                <ul class="profile-links">
+                    <li>
+                        <a href="#edit-profile">
+                            <i class="fas fa-user-edit"></i>
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#address">
+                            <i class="fas fa-map-marked-alt"></i>
+                            Manage Addresses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#password">
+                            <i class="fas fa-lock"></i>
+                            Change Password
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Help & Support</h2>
+                <ul class="profile-links">
+                    <li>
+                        <a href="#feedback">
+                            <i class="fas fa-comment-alt"></i>
+                            Give Feedback
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#terms">
+                            <i class="fas fa-file-contract"></i>
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#support">
+                            <i class="fas fa-headset"></i>
+                            Customer Support
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="danger-zone">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Danger Zone</h3>
+                    <p>Once you delete your account, there is no going back. Please be certain.</p>
+                    <button class="btn btn-danger" onclick="confirmDelete()">
+                        <i class="fas fa-trash-alt"></i> Delete Account
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/profilescript.js"></script>
+</body>
+</html>

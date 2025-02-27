@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Flora Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/dashboardstyle.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span>Flora Hub</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#dashboard" class="nav-link active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#inventory" class="nav-link">
+                    <i class="fas fa-box"></i>
+                    <span>Inventory</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#orders" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Orders</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#customers" class="nav-link">
+                    <i class="fas fa-users"></i>
+                    <span>Customers</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#products" class="nav-link">
+                    <i class="fas fa-leaf"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#payments" class="nav-link">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#reviews" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Reviews</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#settings" class="nav-link">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1>Dashboard Overview</h1>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Revenue</h3>
+                <div class="stat-value">₹45,678</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Orders</h3>
+                <div class="stat-value">234</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Customers</h3>
+                <div class="stat-value">1,234</div>
+            </div>
+            <div class="stat-card">
+                <h3>Products</h3>
+                <div class="stat-value">89</div>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="content-card">
+                <h2><i class="fas fa-box"></i> Low Stock Alert</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rose Plant</td>
+                                <td>5</td>
+                                <td><span class="status-badge status-low">Low</span></td>
+                            </tr>
+                            <tr>
+                                <td>Snake Plant</td>
+                                <td>15</td>
+                                <td><span class="status-badge status-medium">Medium</span></td>
+                            </tr>
+                            <tr>
+                                <td>Money Plant</td>
+                                <td>45</td>
+                                <td><span class="status-badge status-good">Good</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-shopping-cart"></i> Recent Orders</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#FH123</td>
+                                <td>John Doe</td>
+                                <td>₹748</td>
+                                <td><span class="status-badge status-good">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>#FH124</td>
+                                <td>Jane Smith</td>
+                                <td>₹299</td>
+                                <td><span class="status-badge status-medium">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-chart-line"></i> Sales Analytics</h2>
+                <div class="chart">
+                    <!-- Placeholder for chart -->
+                    <p>Sales Chart Will Be Displayed Here</p>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2><i class="fas fa-star"></i> Recent Reviews</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Customer</th>
+                                <th>Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rose Plant</td>
+                                <td>John Doe</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </tr>
+                            <tr>
+                                <td>Snake Plant</td>
+                                <td>Jane Smith</td>
+                                <td>⭐⭐⭐⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts//dashboardscript.js"></script>
+</body>
+</html>

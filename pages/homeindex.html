@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraHub - Your Plant Paradise</title>
+    <link rel="stylesheet" href="../styles/homestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FloraHub</div>
+        
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="./shopindex.html">Shop</a>
+            <a href="./aboutusindex.html">About Us</a>
+            <a href="./contactindex.html">Contact Us</a>
+            <a href="./feedbackindex.html">Feedback</a>
+        </div>
+
+        <div class="nav-buttons">
+            <div class="profile-container">
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="profile-dropdown">
+                    <div class="profile-menu">
+                        <a href="./profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a href="./orders.html"><i class="fas fa-box"></i> My Orders</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="cart-dropdown">
+                    <div class="cart-header">
+                        <button class="close-cart">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Shopping Cart</h3>
+                        <div></div>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="total-amount">$0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FloraHub</h1>
+            <p>Discover the perfect plants for your space</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products">
+        <h2>Featured Plants</h2>
+        <div class="product-grid">
+            <a href="./monstera-index.html" class="product-card" data-id="1">
+                <img src="../images/monstera1.jpg" alt="Monstera Deliciosa">
+                <div class="product-info">
+                    <h3>Monstera Deliciosa</h3>
+                    <p>₹2500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </a>
+            <a href="./snake-plant-index.html" class="product-card" data-id="2">
+                <img src="../images/snakeplant1.jpg" alt="Snake Plant">
+                <div class="product-info">
+                    <h3>Snake Plant</h3>
+                    <p>₹550</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </a>
+            <a href="./peace-lilly-index.html" class="product-card" data-id="3">
+                <img src="../images/peacelilly1.jpg" alt="Peace Lily">
+                <div class="product-info">
+                    <h3>Peace Lily</h3>
+                    <p>₹850</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </a>
+            <a href="./plant-stand-index.html" class="product-card" data-id="4">
+                <img src="../images/plantstand1.jpg" alt="Fiddle Leaf Fig">
+                <div class="product-info">
+                    <h3>Plant Stand</h3>
+                    <p>₹1950</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Prebook Service -->
+    <section class="prebook">
+        <h2>Why Prebook with Us?</h2>
+        <div class="prebook-grid">
+            <div class="prebook-card">
+                <i class="fas fa-leaf"></i>
+                <h3>Fresh Selection</h3>
+                <p>Get first pick of our newest arrivals</p>
+            </div>
+            <div class="prebook-card">
+                <i class="fas fa-truck"></i>
+                <h3>Priority Shipping</h3>
+                <p>Guaranteed delivery on your schedule</p>
+            </div>
+            <div class="prebook-card">
+                <i class="fas fa-percentage"></i>
+                <h3>Special Discounts</h3>
+                <p>Exclusive prices for pre-booking</p>
+            </div>
+            <div class="prebook-card">
+                <i class="fas fa-heart"></i>
+                <h3>Plant Care Guide</h3>
+                <p>Detailed care instructions included</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="review-slider">
+            <div class="review-card">
+                <img src="../images/profile-pic.png" alt="Customer" class="reviewer-img">
+                <p class="review-text">"The plants I received were in perfect condition. The customer service was exceptional!"</p>
+                <p class="reviewer-name">Customer 1</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="../images/profile-pic.png" alt="Customer" class="reviewer-img">
+                <p class="review-text">"FloraHub has the best selection of indoor plants. Very happy with my purchase!"</p>
+                <p class="reviewer-name">Customer 2</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <img src="../images/profile-pic.png" alt="Customer" class="reviewer-img">
+                <p class="review-text">"The prebook service is amazing! Got exactly what I wanted, when I wanted it."</p>
+                <p class="reviewer-name">Customer 3</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="copyright">© FloraHub 2025</p>
+    </footer>
+
+    <script src="../scripts/homescript.js"></script>
+</body>
+</html> 

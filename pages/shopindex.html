@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraHub - Your Plant Paradise</title>
+    <link rel="stylesheet" href="../styles/shopstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FloraHub</div>
+        
+        <div class="nav-links">
+            <a href="./homeindex.html" >Home</a>
+            <a href="#">Shop</a>
+            <a href="./aboutusindex.html">About Us</a>
+            <a href="./contactindex.html">Contact Us</a>
+            <a href="./feedbackindex.html">Feedback</a>
+        </div>
+
+        <div class="nav-buttons">
+            <div class="profile-container">
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="profile-dropdown">
+                    <div class="profile-menu">
+                        <a href="#"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a href="#"><i class="fas fa-box"></i> My Orders</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="cart-dropdown">
+                    <div class="cart-header">
+                        <button class="close-cart">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Shopping Cart</h3>
+                        <div></div>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added dynamically -->
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="total-amount">$0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FloraHub</h1>
+            <p>Discover the perfect plants for your space</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for plants...">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Filters Section -->
+        <div class="filters-section">
+            <div class="filter-group">
+                <select id="categoryFilter" class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="plants">Plants</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="decorations">Decorations</option>
+                    <option value="prebook">Pre-book Plants</option>
+                </select>
+                <select id="sortFilter" class="filter-select">
+                    <option value="">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <section class="products-grid" id="productsGrid">
+            <!-- Products will be added dynamically -->
+        </section>
+
+        <!-- No Results Message -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <h3>No products found</h3>
+            <p>Try adjusting your search or filters</p>
+        </div>
+
+        <!-- Pre-book Section -->
+        <section class="prebook-section">
+            <h2>Pre-book Products</h2>
+            <div class="prebook-grid" id="prebookGrid"></div>
+        </section>
+    </main>
+
+    <!-- Product Template -->
+    <template id="productTemplate">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="" alt="">
+                <span class="product-badge"></span>
+            </div>
+            <div class="product-info">
+                <h3 class="product-name"></h3>
+                <div class="product-rating">
+                    <div class="stars"></div>
+                </div>
+                <div class="product-price">
+                    <span class="current-price"></span>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Pre-book Template -->
+    <template id="prebookTemplate">
+        <div class="prebook-card">
+            <div class="prebook-image">
+                <img src="" alt="">
+                <div class="timer-badge">
+                    <span class="timer"></span>
+                </div>
+            </div>
+            <div class="prebook-info">
+                <h3 class="prebook-name"></h3>
+                <p class="prebook-description"></p>
+                <div class="prebook-price"></div>
+                <button class="prebook-btn" disabled>
+                    <i class="fas fa-clock"></i>
+                    Coming Soon
+                </button>
+            </div>
+        </div>
+    </template>
+        <!-- Footer -->
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <h1 class="font-weight size">©2024 - Flora Hub</h1>
+            </div>
+        </footer> 
+
+    <script src="../scripts/shopscript.js"></script>
+</body>
+</html> 

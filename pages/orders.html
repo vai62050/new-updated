@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - FloraHub</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/shared.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/ordersstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a class="back-link" href="./shopindex.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>My Orders</h1>
+
+        <div class="order-filters">
+            <button class="filter-button " data-status="all">All Orders</button>
+            <button class="filter-button" data-status="pending">Pending</button>
+            <button class="filter-button" data-status="processing">Processing</button>
+            <button class="filter-button" data-status="completed">Completed</button>
+            <button class="filter-button" data-status="cancelled">Cancelled</button>
+        </div>
+
+        <div class="orders-list" id="ordersList">
+            <!-- Orders will be dynamically added here -->
+        </div>
+    </div>
+
+    
+    <script src="../scripts/orderscript.js"></script>
+</body>
+</html>

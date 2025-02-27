@@ -1,0 +1,238 @@
+/* Internal CSS */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0;
+    color: lightgray;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-btn, .cart-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cart-count {
+    background: #ff4757;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #2d2d2d;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #f5f5f5;
+}
+
+.dropdown-active {
+    display: block;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2d2d2d;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-method.active {
+    border-color: #4CAF50;
+    background: #f8fff8;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 1rem;
+    accent-color: #4CAF50;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    color: #3a3a3a;
+    cursor: pointer;
+}
+
+.gpay-logo {
+    width: 60px;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.8rem 2.5rem 0.8rem 1rem; /* Adjusted padding */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.validation-icon {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    pointer-events: none; /* Prevent interaction with the icon */
+}
+
+.btn-primary {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #45a049;
+}
+
+.order-items {
+    margin-bottom: 2rem;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.order-total div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.success-animation {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}

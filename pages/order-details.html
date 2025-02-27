@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details - Flora Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/order-details-style.css">
+</head>
+<body>
+   
+    <div class="nav">
+        <a href="./shopindex.html" class="nav-link"><i class="fa-solid fa-arrow-left"></i> &nbsp;Back</a>
+    </div>
+
+    <div class="form-container">
+        <div class="logo">
+            <h1>Flora Hub</h1>
+        </div>
+        
+        <h2>Order Details</h2>
+        
+        <div class="order-summary">
+            <div class="form-group">
+                <label>Order ID</label>
+                <p class="order-id" id="orderId"></p>
+            </div>
+            <div class="form-group">
+                <label>Items</label>
+                <div class="order-details" id="orderDetails">
+                    <div class="order-item">
+                        <span>Rose Plant</span>
+                        <span>₹299</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Snake Plant</span>
+                        <span>₹399</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Delivery Charges</span>
+                        <span>₹50</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-total">
+                <span>Total Amount:</span>
+                <span id="totalAmount">₹748</span>
+            </div>
+        </div>
+
+        <form id="addressForm">
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" name="address" placeholder="Enter your delivery address" required></textarea>
+            </div>
+
+            <button type="submit">Proceed to Payment</button>
+        </form>
+    </div>
+
+    <script src="../scripts/order-details-script.js"></script>
+</body>
+</html>

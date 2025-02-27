@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraHub - Your Plant Paradise</title>
+    <link rel="stylesheet" href="../styles/contactstyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">FloraHub</div>
+        
+        <div class="nav-links">
+            <a href="./homeindex.html">Home</a>
+            <a href="./shopindex.html">Shop</a>
+            <a href="./aboutusindex.html">About Us</a>
+            <a href="./contactindex.html">Contact Us</a>
+            <a href="./feedbackindex.html">Feedback</a>
+        </div>
+
+        <div class="nav-buttons">
+            <div class="profile-container">
+                <button class="profile-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+                <div class="profile-dropdown">
+                    <div class="profile-menu">
+                        <a href="./profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+                        <a href="./orders.html"><i class="fas fa-box"></i> My Orders</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="cart-dropdown">
+                    <div class="cart-header">
+                        <button class="close-cart">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <h3>Shopping Cart</h3>
+                        <div></div>
+                    </div>
+                    <div class="cart-items">
+                        <!-- Cart items will be added dynamically -->
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="cart-total">
+                            <span>Total:</span>
+                            <span class="total-amount">$0.00</span>
+                        </div>
+                        <button class="checkout-btn">Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to FloraHub</h1>
+            <p>Discover the perfect plants for your space</p>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Location Services Section -->
+    <div class="contacts bg">
+        <div class="our-contacts">
+            <h1 class="heading extra font">Our Location & Hours</h1>
+            <p class="text extra">We welcome you to explore our space</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact1">
+                <div class="image contactimage1"></div>
+                <h1 class="title">Location Details</h1>
+                <div class="box">
+                    <p class="details">FloraHub is located in the heart of the city, easily accessible via public transport or car. Our address is 123 Plant Avenue, Green City. We invite you to visit us and explore our diverse selection of plants and gardening supplies firsthand.</p>
+                </div>
+            </div>
+            <div class="contact2">
+                <div class="image contactimage2"></div>
+                <h1 class="title">Business Hours</h1>
+                <div class="box">
+                    <p class="details">Our doors are open to you from Monday to Saturday, 9 AM to 6 PM. Whether you're a seasoned gardener or a beginner, we are here to provide you with expert advice and assistance during our operating hours. We believe that every visit should be a delightful experience.</p>
+                </div>
+            </div>
+            <div class="contact3">
+                <div class="image contactimage3"></div>
+                <h1 class="title">Accessibility</h1>
+                <div class="box">
+                    <p class="details">FloraHub is committed to being accessible to everyone. Our location is designed with easy access for individuals with mobility challenges. Ample parking is available nearby, and we are dedicated to providing a welcoming environment for all plant enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Section -->
+    <div class="contact-info-section">
+        <div class="contact-info-container">
+            <!-- Left side - Contact Details -->
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p class="contact-subtitle">Visit our shop location or contact us today</p>
+                
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="item-text">
+                            <h4>Our Location</h4>
+                            <p>Yuvakshetra Institute Of Management Studies<br>Ezhakkad,Mundur</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="item-text">
+                            <h4>Email Us</h4>
+                            <p>FloraHub123@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="item-text">
+                            <h4>Call Us</h4>
+                            <p>+91 9090909090</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="item-text">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Saturday: 9 AM - 6 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side - Map -->
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.528935085096!2d76.5504488!3d10.847316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba870b4a0944787%3A0x507d4ce1c9b46feb!2sYuvakshetra%20Institute%20of%20Management%20Studies!5e0!3m2!1sen!2sin!4v1739811346350!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="msg-container">
+        <div class="msg-details">
+            <h3 class="text res font" style="color: black;">Reach Out to Us</h3>
+            <p class="text res" style="color: black;">Job Offers Are Available</p>
+        </div>
+        <div class="form">
+            <form action="./index.html">
+                <div class="inputgroup">
+                    <input type="text" class="text-box" required>
+                    <label for="text-box" class="text-label">Name</label>
+                </div>
+                <div class="inputgroup">
+                    <input type="text" class="text-box" required>
+                    <label for="text-box" class="text-label">Email</label>
+                </div>
+                <div class="inputgroup-text">
+                    <textarea name="" id="" class="textarea" required></textarea>
+                    <label for="text-box" class="textarea-label">Text Us</label>
+                </div>
+                <div class="sub-div">
+                    <input type="submit" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            <h1 class="font-weight size">©Flora Hub - 2025</h1>
+        </div>
+    </footer>
+
+    <script src="../scripts/contactscript.js"></script>
+</body>
+</html> 
